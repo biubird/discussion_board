@@ -1,0 +1,21 @@
+{
+  "name": "disc_board",
+  "description": "",
+  "main": "server.js",
+  "authors": [
+    "Heather Doucet <heatherredoucet@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/biubird/branching_merging",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-route": "^1.5.8",
+    "angular": "^1.5.8"
+  }
+}

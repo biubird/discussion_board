@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>LoginPage</title>
+  </head>
+  <body>
+<h2>Hello!</h2>
+<p>Please enter your name to join and share your ideas:</p>
+<form name='loginForm'>
+  <input type='text' name='userName' ng-model='newUser.userName' placeholder='Your name here...' ng-minlength='2' required />
+  <input type='submit' ng-click='createUser()' value='Enter' />
+</form>
+<div ng-messages="loginForm.userName.$error" role="alert">
+  <p ng-message="minlength">You must enter at least 2 letters!</p>
+  <p ng-message="required">Name is required!</p>
+</div>
+  </body>
+</html>

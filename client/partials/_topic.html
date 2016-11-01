@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My Topic!</title>
+  </head>
+  <body>
+  <div class="topic">
+    <h2><a href="#/users/{{topic._user}}">{{topic._user}}</a> posted a topic:</h2>
+    <h2>{{topic.name}}</h2>
+    <p>Description:  {{topic.description}}</p>
+  </div>
+  <hr />
+  <div class="post">
+    <h2>Post your answer here:</h2>
+    <form ng-submit="createPost(newPost, user)">
+      <input type="text" ng-model="newPost.message" maxlength: "200" required />
+      <input type="submit" value="Submit" />
+    </form>
+  </div>
+  <div class="posted" ng-repeat='post in posts'>
+      <h3><a href="#/posts/{{post._user._id}}">{{post._user.userName}}</a></h3>
+        <p><a href="#/posts/{{post._id}}">{{post.message}}</a></p>
+  </div>
+  <hr />
+  </body>
+</html>
